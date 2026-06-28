@@ -40,3 +40,5 @@ def delete_expense(expense_id: int, db: Session = Depends(get_db)):
     if not expense:
         raise HTTPException(status_code=404, detail="Expense not found")
     return {"message": "Expense deleted"}
+
+#M.SH
